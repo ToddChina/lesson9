@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="main" style="width: 600px;height:400px;"></div>
+	<script src="script/echarts.min.js"></script>
+	<script>
+		var myChart = echarts.init(document.getElementById('main'));
+		var option = {
+			title: {
+			    text: '前端开发技能'
+			},
+			tooltip: {},
+			legend: {
+			    data:['技能']
+			},
+			xAxis: {
+			    data: ["html+css","jquery","javascript","html5+css3","github","node.js"]
+			},
+			yAxis: {
+				
+			},
+			series: [{
+			    name: '技能',
+			    type: 'bar',
+			    data: [95, 90, 80, 96, 50, 20]
+			}]
+        };
+        myChart.setOption(option);
+	</script>
+</body>
+</html>

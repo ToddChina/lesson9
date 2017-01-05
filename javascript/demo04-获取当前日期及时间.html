@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="date">
+	<input type="button" id="btn" value="获取时间">
+
+	<script src="script/jquery.js"></script>
+	<script>
+		$("#btn").click(function(){
+			var today = new Date();
+			var year = today.getFullYear();
+			var month = today.getMonth();
+			var date = today.getDate();
+			var hours = today.getHours();
+			var minutes = today.getMinutes();
+			var seconds = today.getSeconds();
+			var result = year + "年" + (month+1) + "月" + date + "日" + hours + ":" + minutes + ":" +seconds; 
+			$("#date").val(result)
+		})
+	</script>
+</body>
+</html>

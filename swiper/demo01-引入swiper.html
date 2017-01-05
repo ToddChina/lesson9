@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/swiper-3.3.1.min.css">
+	<style>
+		body{
+			transform-style: preserve-3d; 
+		}
+		.swiper-container{
+			width: 300px;
+			height: 300px;
+		}
+		.slide1{
+			background-color: #f00;
+		}
+		.slide2{
+			background-color: #0f0;
+		}
+		.slide3{
+			background-color: #00f;
+		}
+		.slide4{
+			background-color: #ff0;
+		}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide slide1">Slide 1</div>
+	        <div class="swiper-slide slide2">Slide 2</div>
+	        <div class="swiper-slide slide3">Slide 3</div>
+	        <div class="swiper-slide slide4">Slide 4</div>
+	        <div class="swiper-slide slide1">Slide 5</div>
+	        <div class="swiper-slide slide2">Slide 6</div>
+	        <div class="swiper-slide slide3">Slide 7</div>
+	        <div class="swiper-slide slide4">Slide 8</div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<script src="script/swiper-3.3.1.min.js"></script>
+	<script>        
+		var mySwiper = new Swiper ('.swiper-container', {
+			loop: true,
+			autoplay: 2000,
+			// 如果需要分页器
+			slidesPerView : 'auto',
+			loopedSlides :8,
+		})
+  </script>
+</body>
+</html>
